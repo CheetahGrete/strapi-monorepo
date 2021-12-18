@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.fuchsia,
+        primary: colors.pink,
       },
       container: {
         center: true,
