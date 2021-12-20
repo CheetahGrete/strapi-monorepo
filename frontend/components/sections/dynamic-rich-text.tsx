@@ -88,7 +88,6 @@ function DynamicRichText({ data }: Props): ReactElement {
         Test DataLayer
       </button> */}
 
-        {console.log(router)}
         <div className="">
           <MarkdownRender>{data.content}</MarkdownRender>
           <br />

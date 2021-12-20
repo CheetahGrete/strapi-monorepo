@@ -32,7 +32,6 @@ const MarkdownRender = ({ children }) => {
     },
 
     h1: ({ node, ...props }) => {
-      console.log('h1 md', node)
       return (
         <h1
           {...props}

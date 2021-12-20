@@ -56,3 +56,57 @@ html {
 .error-style {
   @apply text-red-500 font-semibold h-12 text-base mt-1 ml-2 text-left;
 }
+
+.cssgradient {
+  background: linear-gradient(90deg, #00ffbd, #00a3ff);
+  /* background: linear-gradient(90deg, #34d399, #3b82f6); */
+  background-size: 400% 400%;
+  -webkit-animation: GredientAnimation 20s ease infinite;
+  -moz-animation: GredientAnimation 20s ease infinite;
+  -o-animation: GredientAnimation 20s ease infinite;
+  animation: GredientAnimation 20s ease infinite;
+}
+@-webkit-keyframes GredientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes GredientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes GredientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes GredientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

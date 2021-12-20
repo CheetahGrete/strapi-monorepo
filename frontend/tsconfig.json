@@ -16,6 +16,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": false,
+    "removeComments": true,
     "paths": {
       "@/components/*": ["components/*"],
       "@/lib/*": ["lib/*"],

@@ -12,6 +12,7 @@ import LevelModel from './sections/level-model'
 import ImageSection from './sections/image-section'
 import DynamicRichText from './sections/dynamic-rich-text'
 import DangerousHTML from './sections/dangerous-html'
+import GradientHero from './sections/gradient-hero'
 
 // Map Strapi sections to section components
 const sectionComponents = {
@@ -28,6 +29,7 @@ const sectionComponents = {
   'sections.image': ImageSection,
   'sections.dynamic-content': DynamicRichText,
   'sections.dangerous-html': DangerousHTML,
+  'sections.gradient-hero': GradientHero,
 }
 
 // Display a section individually

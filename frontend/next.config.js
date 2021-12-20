@@ -17,6 +17,7 @@ const nextConfig = {
       'localhost',
       's3-images-strapibeammeup.s3.eu-central-1.amazonaws.com',
       'images.unsplash.com',
+      's3-images-idealcoachingfargate.s3.eu-central-1.amazonaws.com',
     ],
   },
   async redirects() {
