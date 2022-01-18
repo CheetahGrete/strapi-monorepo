@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const NotificationBanner = ({ data, closeSelf }: IProps) => {
-  return (
+  if (data)
     <div
       className={classNames(
         // Common classes
@@ -43,7 +43,8 @@ const NotificationBanner = ({ data, closeSelf }: IProps) => {
         </button>
       </div>
     </div>
-  )
+
+  return null
 }
 
 export default NotificationBanner
