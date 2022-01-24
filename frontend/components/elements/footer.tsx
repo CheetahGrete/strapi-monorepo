@@ -44,7 +44,9 @@ const Footer: React.FC<FooterProps> = ({ footer }) => {
         </nav>
       </div>
       <div className="py-6 text-sm text-gray-700 bg-gray-200 text-center">
-        <div className="container">{footer.smallText}</div>
+        <div className="container">
+          {new Date().getFullYear()} {footer.smallText}
+        </div>
       </div>
     </footer>
   )

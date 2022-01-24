@@ -6,7 +6,7 @@ import toast from 'react-hot-toast'
 import slugify from 'slugify'
 
 const CheckboxComponent = ({ data }) => {
-  if (data)
+  if (data.length > 0)
     return (
       <div>
         <label
@@ -57,7 +57,7 @@ const LeadForm = ({ data }) => {
       >
         {data.title}
       </h2>
-      <div className="overflow-hidden py-16 px-4 bg-white sm:px-6 lg:py-24 lg:px-8">
+      <div className="overflow-hidden py-6 px-4 bg-white sm:px-6 lg:py-8 lg:px-8">
         <div className="mx-auto max-w-xl">
           <Formik
             initialValues={{
@@ -87,6 +87,7 @@ const LeadForm = ({ data }) => {
                   }),
                 })
 
+                toast.success('Vielen Dank für Ihre Nachricht!')
                 window.dataLayer.push({ event: 'form-sent' })
               } catch (err) {
                 setErrors({})
@@ -178,7 +179,7 @@ const LeadForm = ({ data }) => {
                     name="subject"
                   />
 
-                  <CheckboxComponent data={data.CheckboxRow} />
+                  {/* <CheckboxComponent data={data.CheckboxRow} /> */}
 
                   <label
                     htmlFor="message"

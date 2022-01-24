@@ -2,7 +2,6 @@
 import Link, { LinkProps } from 'next/link'
 import ReactMarkdown from 'react-markdown'
 import slugify from 'slugify'
-import classNames from 'classnames'
 
 import * as React from 'react'
 
@@ -11,7 +10,7 @@ const MarkdownRender = ({ children }) => {
     a: ({ href, children, title, ...props }) => {
       if (href.startsWith('#')) {
         return (
-          <Link href={href} title={title}>
+          <Link href={href} title={title} className="anchor">
             <a>{children}</a>
           </Link>
         )
@@ -19,13 +18,19 @@ const MarkdownRender = ({ children }) => {
 
       if (href.startsWith('/'))
         return (
-          <Link href={href} title={title}>
+          <Link href={href} title={title} className="internal">
             <a>{children}</a>
           </Link>
         )
 
       return (
-        <a href={href} target="_blank" rel="noopener noreferrer" title={title}>
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={title}
+          className="external"
+        >
           {children}
         </a>
       )
@@ -170,7 +175,7 @@ const MarkdownRender = ({ children }) => {
   return (
     <div>
       <ReactMarkdown
-        className="mx-auto break-words prose prose-xl "
+        className="mx-auto break-words prose prose-xl"
         skipHtml={true}
         components={customRender}
       >

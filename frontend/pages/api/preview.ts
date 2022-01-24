@@ -21,6 +21,7 @@ const preview = async (req: NextApiRequest, res: NextApiResponse) => {
 
   // Redirect to the path from the fetched post
   // We don't redirect to req.query.slug as that might lead to open redirect vulnerabilities
+  // deepcode ignore OR: Code cant be reached if preview secret is not valid
   res.writeHead(307, { Location: `/${pageData.slug.replace('__', '/')}` })
   res.end()
 }

@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
         <Head>
           {/* <script
             id="usercentrics-cmp"
-            data-settings-id="JhKKW9-rX"
+            data-settings-id="XXXXXXX"
             src="https://app.usercentrics.eu/browser-ui/latest/bundle.js"
             defer
           ></script> */}
@@ -24,7 +24,7 @@ export default class MyDocument extends Document {
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer', 'GTM-TRCDQTC');
+              })(window,document,'script','dataLayer', 'GTM-XXXX');
               `,
             }}
           /> */}
@@ -43,7 +43,7 @@ export default class MyDocument extends Document {
         <body>
           <noscript>
             {/* <iframe
-              src="https://www.googletagmanager.com/ns.html?id=GTM-TRCDQTC"
+              src="https://www.googletagmanager.com/ns.html?id=GTM-XXXX"
               height="0"
               width="0"
               style={{ display: 'none', visibility: 'hidden' }}

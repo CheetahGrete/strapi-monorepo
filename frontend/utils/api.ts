@@ -66,7 +66,7 @@ export async function getPageData(params, locale, preview = false) {
 export async function getGlobalData(locale: string) {
   let language
   if (!locale) {
-    language = 'en'
+    language = 'de'
   } else {
     language = locale
   }
