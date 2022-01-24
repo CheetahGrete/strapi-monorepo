@@ -10,7 +10,7 @@ module.exports = {
     // Called after an entry is created
     async afterCreate(result) {
       await strapi.plugins["email"].services.email.send({
-        to: "maderamadeus@gmail.com",
+        to: "im@seo-freelancerin.com",
         subject: "New entry in the lead-form-submissions",
         text: "New entry in the lead-form-submissions",
         html: "<h1>New entry in the lead-form-submissions</h1>",
