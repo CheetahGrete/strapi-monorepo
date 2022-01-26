@@ -11,9 +11,9 @@ module.exports = {
     async afterCreate(result) {
       await strapi.plugins["email"].services.email.send({
         to: "isabell@beammeup.today",
-        subject: "New entry in the lead-form-submissions",
-        text: "New entry in the lead-form-submissions",
-        html: "<h1>New entry in the lead-form-submissions</h1>",
+        subject: "New entry in the lead-form-submissions in Beammeup",
+        text: "New entry in the lead-form-submissions in Beammeup",
+        html: "<h1>New entry in the lead-form-submissions in Beammeup</h1>",
       });
     },
   },
